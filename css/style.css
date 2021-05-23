@@ -85,7 +85,7 @@ li {
 
 .main-section {
   background-color: #04223E;
-  background-image: url("media/header-bg.png");
+  background-image: url("/media/header-bg.png");
   background-repeat: no-repeat;
   background-size: cover;
   padding: 3.8em 0 14.8em 0;
