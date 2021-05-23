@@ -1,0 +1,117 @@
+@-ms-viewport{
+  width: device-width;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+}
+
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #03192E;
+  color: #FFF;
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+}
+
+button {
+  color: #04223e;
+  border: 0;
+  font-weight: 600;
+  cursor: pointer;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+
+a {
+  text-decoration: none;
+  color: #FFF;
+  padding: 5px;
+}
+
+a:hover, button:hover {
+  opacity: .7;
+}
+
+.navbar {
+  list-style-type: none;
+  padding: 5px;
+  background-color: #151824;
+  
+}
+
+
+.navbar .nav-item:not(:last-child) {
+  float: left;
+  padding: 5px; 
+  border-radius: 25px;
+  border: 2px;
+}
+
+
+
+ul {
+  overflow: hidden;
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+}
+
+li {
+  float: left;
+  
+}
+
+
+.current {
+  border-radius: 40px;
+  background-color: #5EA7D2;
+  padding: 5px;
+}
+
+.navbar .nav-item2 {
+  float: right;
+  padding: 5px;
+  border-radius: 10px;
+}
+
+.main-section {
+  background-color: #04223E;
+  background-image: url("https://web-cdn.luckvintage.net/sites/lvts.xyz/img/header-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 3.8em 0 14.8em 0;
+  border-radius: 0 0 25px 50px;
+  animation-duration: 1.5s;
+  animation-name: fadeAndScale;
+
+}
+
+.server-title {
+  margin: 5px;
+}
+
+@keyframes fadeAndScale {
+    from {
+        opacity: 0;
+        transform: scale(.9, .9);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1, 1);
+    }
+}
+
+.server-description {
+  margin: 10px;
+
+  }
+}
