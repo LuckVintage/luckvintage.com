@@ -7,9 +7,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <title>Sorry!</title>
         <link rel="stylesheet" href="css/style.css" />
-		<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;900&display=swap" />
+        <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;900&display=swap" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
-		<link rel="stylesheet" type="text/css" href="css/cookieconsent.min.css" />
+        <link rel="stylesheet" type="text/css" href="css/cookieconsent.min.css" />
     </head>
 
     <body>
@@ -17,6 +17,17 @@
             <ul class="navbar">
                 <li class="current">
                     <a href="/"><i class="fa fa-home"></i> Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="/contact"><i class="fa fa-envelope"></i> Contact</a>
+                </li>
+                <li class="nav-item2">
+                    <a href="/">
+                        &copy; Copyright luckvintage.com
+                        <script>
+                            document.write(new Date().getFullYear());
+                        </script>
+                    </a>
                 </li>
             </ul>
         </div>
@@ -26,23 +37,23 @@
             <h2 class="server-description">Unfortunately, we can no longer offer you this service.</h2>
         </header>
         <br />
-<script src="js/cookieconsent.min.js" data-cfasync="false"></script>
-<script>
-window.cookieconsent.initialise({
-  "palette": {
-    "popup": {
-      "background": "#151824"
-    },
-    "button": {
-      "background": "#138496"
-    }
-  },
-  "theme": "classic",
-  "position": "bottom-right",
-  "content": {
-    "message": "This website uses cookies to ensure you get the best experience on our website."
-  }
-});
-</script>
+        <script src="js/cookieconsent.min.js" data-cfasync="false"></script>
+        <script>
+            window.cookieconsent.initialise({
+                palette: {
+                    popup: {
+                        background: "#151824",
+                    },
+                    button: {
+                        background: "#138496",
+                    },
+                },
+                theme: "classic",
+                position: "bottom-right",
+                content: {
+                    message: "This website uses cookies to ensure you get the best experience on our website.",
+                },
+            });
+        </script>
     </body>
 </html>

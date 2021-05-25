@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="shortcut icon" href="media/logo.png" />
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Contact</title>
+        <link rel="stylesheet" href="css/contact.css" />
+        <link rel="stylesheet" href="css/form.css" />
+        <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;900&display=swap" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+        <link rel="stylesheet" type="text/css" href="css/cookieconsent.min.css" />
+    </head>
+
+    <body>
+        <div class="navbar">
+            <ul class="navbar">
+                <li class="nav-item">
+                    <a href="/"><i class="fa fa-home"></i> Home</a>
+                </li>
+                <li class="current">
+                    <a href="/contact"><i class="fa fa-envelope"></i> Contact</a>
+                </li>
+                <li class="nav-item2">
+                    <a href="/">
+                        &copy; Copyright luckvintage.com
+                        <script>
+                            document.write(new Date().getFullYear());
+                        </script>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <header class="main-section">
+            <img src="media/logo.png" alt="Logo" width="150" height="150" />
+            <h1 class="server-title">Contact Form:</h1>
+            <br />
+            <center>
+                <form id="fs-frm" name="simple-contact-form" accept-charset="utf-8" action="https://formspree.io/f/moqyeoza" method="post">
+                    <fieldset id="fs-frm-inputs">
+                        <input type="text" name="name" id="full-name" placeholder="Enter your first and last name here..." required="" />
+                        <input type="email" name="_replyto" id="email-address" placeholder="Enter your email address here..." required="" />
+                        <textarea rows="5" name="message" id="message" placeholder="Enter your message here..." required=""></textarea>
+                        <input type="hidden" name="_subject" id="email-subject" value="Contact Form Submission" />
+                    </fieldset>
+                    <input type="submit" value="Submit" />
+                </form>
+            </center>
+        </header>
+        <br />
+        <script src="js/cookieconsent.min.js" data-cfasync="false"></script>
+        <script>
+            window.cookieconsent.initialise({
+                palette: {
+                    popup: {
+                        background: "#151824",
+                    },
+                    button: {
+                        background: "#138496",
+                    },
+                },
+                theme: "classic",
+                position: "bottom-right",
+                content: {
+                    message: "This website uses cookies to ensure you get the best experience on our website.",
+                },
+            });
+        </script>
+    </body>
+</html>
