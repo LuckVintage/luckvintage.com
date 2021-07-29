@@ -109,3 +109,13 @@ li {
 .server-description {
     margin: 10px;
 }
+
+.logo {
+    float: right;
+    padding: 0px;
+    border-radius: 10px;
+    margin: 0;
+    outline: 0;
+    height: 27px;
+    width: 27px;
+}
