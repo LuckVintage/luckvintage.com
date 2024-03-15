@@ -35,6 +35,31 @@ main {
     text-align: center;
 }
 
+.ad {
+    margin-bottom: 20px;
+    padding: 20px;
+    border: 1px solid #440cdf;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.ad img {
+    max-width: 700px;
+    max-height: 80px;
+}
+
+@media (max-width: 768px) {
+    .ad img {
+        max-width: 385px;
+    }
+}
+
+@media (max-width: 480px) {
+    .ad img {
+        max-width: 300px;
+    }
+}
+
 .project-button {
     display: inline-block;
     padding: 10px 20px;
