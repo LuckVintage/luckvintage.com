@@ -8,6 +8,25 @@
         <link rel="stylesheet" href="styles.css" />
         <script src="https://kit.fontawesome.com/33d8954084.js" crossorigin="anonymous"></script>
         <script src="ads.js"></script>
+        <!-- Matomo -->
+        <script>
+            var _paq = (window._paq = window._paq || []);
+            /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+            _paq.push(["trackPageView"]);
+            _paq.push(["enableLinkTracking"]);
+            (function () {
+                var u = "https://pmtc.luckvintage.com/";
+                _paq.push(["setTrackerUrl", u + "matomo.php"]);
+                _paq.push(["setSiteId", "5"]);
+                var d = document,
+                    g = d.createElement("script"),
+                    s = d.getElementsByTagName("script")[0];
+                g.async = true;
+                g.src = u + "matomo.js";
+                s.parentNode.insertBefore(g, s);
+            })();
+        </script>
+        <!-- End Matomo Code -->
     </head>
     <body>
         <header>
@@ -51,6 +70,5 @@
         <footer>
             <p>&copy; 2024 luckvintage.com. All Rights Reserved.</p>
         </footer>
-
     </body>
 </html>
