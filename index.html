@@ -8,10 +8,8 @@
         <link rel="stylesheet" href="styles.css" />
         <script src="https://kit.fontawesome.com/33d8954084.js" crossorigin="anonymous"></script>
         <script src="ads.js"></script>
-        <!-- Matomo -->
         <script>
             var _paq = (window._paq = window._paq || []);
-            /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
             _paq.push(["trackPageView"]);
             _paq.push(["enableLinkTracking"]);
             (function () {
@@ -26,19 +24,18 @@
                 s.parentNode.insertBefore(g, s);
             })();
         </script>
-        <!-- End Matomo Code -->
     </head>
     <body>
         <header>
             <h1>&#128075; Welcome to luckvintage.com!</h1>
-            <h3>The projects below are hosted on servers in the &#127468;&#127463; United Kingdom. For support, please <a href="https://luckvintage.net/knowledgebase.php?article=13">click here</a>.</h3>
+            <h3>The projects below are hosted on servers in the &#127468;&#127463; United Kingdom.</h3>
+            <a href="https://luckvintage.net/knowledgebase.php?article=13" target="_blank" class="support-button"><i class="fas fa-info"></i> Support</a>
         </header>
-        <main>
+        <main id="projects-grid">
             <section class="project">
                 <h2><i class="fa-solid fa-paste"></i> PrivateBin</h2>
                 <p>
-                    PrivateBin is a minimalist, open source online pastebin where the server has zero knowledge of pasted data. Data is encrypted and decrypted in the browser using 256bit AES in Galois Counter mode. For more information,
-                    click the button below to visit PrivateBin's website.
+                    PrivateBin is a minimalist, open source online pastebin where the server has zero knowledge of pasted data. Data is encrypted and decrypted in the browser using 256bit AES in Galois Counter mode.
                 </p>
                 <a href="https://privatebin.luckvintage.com" class="project-button"><i class="fas fa-server"></i> Visit our PrivateBin Instance</a>
                 <a href="https://privatebin.info" target="_blank" class="project-button"><i class="fas fa-link"></i> Official PrivateBin website</a>
@@ -46,8 +43,7 @@
             <section class="project">
                 <h2><i class="fa-solid fa-bell"></i> ntfy</h2>
                 <p>
-                    ntfy (pronounced notify) is a simple HTTP-based pub-sub notification service. It allows you to send notifications to your phone or desktop via scripts from any computer, and/or using a REST API. It's infinitely flexible,
-                    and 100% free software. For more information, click the button below to visit ntfy's website.
+                    ntfy (pronounced notify) is a simple HTTP-based pub-sub notification service. It allows you to send notifications to your phone or desktop via scripts from any computer, and/or using a REST API.
                 </p>
                 <a href="https://ntfy.luckvintage.com" class="project-button"><i class="fas fa-server"></i> Visit our ntfy Instance</a>
                 <a href="https://ntfy.sh" target="_blank" class="project-button"><i class="fas fa-link"></i> Official ntfy website</a>
@@ -69,18 +65,23 @@
                 <a href="https://it-tools.luckvintage.com" class="project-button"><i class="fas fa-server"></i> Visit our IT Tools Instance</a>
                 <a href="https://it-tools.tech/" target="_blank" class="project-button"><i class="fas fa-link"></i> Official IT Tools website</a>
             </section>
-            <section class="project">
-                <a href="https://www.abuseipdb.com/user/55645" title="AbuseIPDB is an IP address blacklist for webmasters and sysadmins to report IP addresses engaging in abusive behavior on their networks">
-                    <img src="https://www.abuseipdb.com/contributor/55645.svg" alt="AbuseIPDB Contributor Badge" style="width: 240px;" />
-                </a>
-            </section>
+        </main>
+        <div class="ad-container">
             <section class="ad">
                 <h3><i class="fas fa-bullhorn"></i> ADVERTISEMENT:</h3>
                 <div id="randomAd"></div>
             </section>
-        </main>
+        </div>
+
         <footer>
-            <p>&copy; 2024 luckvintage.com. All Rights Reserved.</p>
+            <p style="margin-bottom: 10px;">&copy; 2024 luckvintage.com. All Rights Reserved.</p>
+            <a href="https://www.abuseipdb.com/user/55645" title="AbuseIPDB is an IP address blacklist for webmasters and sysadmins to report IP addresses engaging in abusive behavior on their networks" style="display: block;">
+                <img
+                    src="https://www.abuseipdb.com/contributor/55645.svg"
+                    alt="AbuseIPDB Contributor Badge"
+                    style="width: 190px; background: #ffffff linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.3) 50%, rgba(0, 0, 0, 0.2) 51%, rgba(0, 0, 0, 0)); padding: 5px;"
+                />
+            </a>
         </footer>
     </body>
 </html>
